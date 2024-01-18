@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head> 
+<body>
+    <div class="container">
+        <form method="post" autocomplete="on">
+            <h1>Registration Form</h1>
+
+            <label for="Email"></label>
+            <input type="email" id="Email" name="Email" placeholder="Email" required>
+
+            <label for="Password"></label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            
+            <label for="retype-Password"></label>
+            <input type="password" id="retype-Password" name="retype-Password" placeholder="Re-type Password" required>
+            
+            <label for="First-name"></label>
+            <input type="text" id="First-name" name="First-name" placeholder="First Name" required>
+
+            <label for="last-name"></label>                
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+
+            <div class="gender">
+                <label>                                      
+                    <input type="radio" name="group" value="Male" > Male
+                </label>
+                <label>                    
+                    <input type="radio" name="group" value="Female"> Female
+                </label>
+            </div>
+            
+            <label for="country"></label>
+            <select id="country" name="country" required>
+                <option value="select"> - Select Country - </option>
+                <option value="India">India</option>
+                <option value="Others">Others</option>
+            </select>
+                    
+            <label for="terms">
+                <input type="checkbox" value="group" name="terms" required> I agree to the terms and conditions. 
+            </label>
+            <label for="notifications">
+                <input type="checkbox" value="group" name="notifications" required> I want to receive notifications.
+            </label>
+
+            <button type="button">Register</button>
+
+        </form>
+        
+    </div>
+</body>
+</html>
